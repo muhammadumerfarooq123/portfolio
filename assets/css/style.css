@@ -1879,3 +1879,19 @@
     .timeline-text { max-width: 700px; }
   
   }
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b30008;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.download-btn:hover {
+    background-color: #c0454b;
+}
