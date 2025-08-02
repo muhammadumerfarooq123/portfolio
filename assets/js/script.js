@@ -134,6 +134,60 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show/hide button when scrolling
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 300) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+// Scroll to top when clicked
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+
+// load webiste
+window.addEventListener("load", () => {
+  const text = "Muhammad Umer Farooq";
+  const typewriter = document.getElementById("typewriter");
+
+  setTimeout(() => {
+    document.querySelector(".preloader-img").style.opacity = 1;
+
+    let delay = 0;
+    for (let i = 0; i < text.length; i++) {
+      if (text[i] === " ") {
+        // Use non-breaking space
+        typewriter.appendChild(document.createTextNode("\u00A0"));
+      } else {
+        const span = document.createElement("span");
+        span.textContent = text[i];
+        span.classList.add("letter");
+        span.style.animationDelay = `${delay}s`;
+        typewriter.appendChild(span);
+        delay += 0.15;
+      }
+    }
+
+    setTimeout(() => {
+      document.getElementById("preloader").style.opacity = "0";
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      }, 800);
+    }, delay * 1000 + 1000);
+
+  }, 1000);
+});
 
 
 // page navigation variables
