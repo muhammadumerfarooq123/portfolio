@@ -188,6 +188,23 @@ window.addEventListener("load", () => {
 
   }, 1000);
 });
+const cursor = document.querySelector('.custom-cursor');
+let mouseX = 0, mouseY = 0;
+let currentX = 0, currentY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function animate() {
+  currentX += (mouseX - currentX) * 0.2;  // Smoothness factor (0.2)
+  currentY += (mouseY - currentY) * 0.2;
+  cursor.style.left = currentX + 'px';
+  cursor.style.top = currentY + 'px';
+  requestAnimationFrame(animate);
+}
+animate();
 
 
 // page navigation variables
