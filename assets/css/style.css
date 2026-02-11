@@ -907,6 +907,19 @@
     transform: translate(-50%, -50%);
     box-shadow: 0 0 5px white, 0 0 10px white;  /* 👉 white outer glow */
 }
+.visit-btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 18px;
+  background:#ff6600;
+  color:#fff;
+  border-radius:5px;
+  text-decoration:none;
+  font-size:14px;
+}
+.visit-btn:hover{
+  background:#000;
+}
 
 .cursor-dot {
     width: 3px;
