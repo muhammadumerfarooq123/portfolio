@@ -8,7 +8,59 @@
  */
 
 
+.website-links{
+  margin-top:40px;
+}
 
+.links-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
+.clients-title{
+  margin-bottom:30px ;
+}
+.link-box{
+  background:#1e1e1e;
+  padding:28px;
+  border-radius:12px;
+  border:1px solid #333;
+  transition:0.3s;
+}
+
+.link-box:hover{
+  transform:translateY(-5px);
+  border-color:#ffb84d;
+}
+
+.link-box h4{
+  color:#ffb84d;
+  margin-bottom:10px;
+}
+
+.link-box ul{
+  list-style:none;
+  padding:0;
+  
+}
+
+.link-box li{
+  margin-bottom:6px;
+      list-style: auto !important;
+          color: white;
+    font-size: 13px;
+
+}
+
+.link-box a{
+  text-decoration:none;
+  color:#ccc;
+  font-size:14px;
+}
+
+.link-box a:hover{
+  color:#fff;
+}
 
 
 /*-----------------------------------*\
