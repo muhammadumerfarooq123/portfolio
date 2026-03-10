@@ -27,7 +27,9 @@
   border:1px solid #333;
   transition:0.3s;
 }
-
+.Shopify{
+  margin: 20px 0px;
+}
 .link-box:hover{
   transform:translateY(-5px);
   border-color:#ffb84d;
