@@ -22,7 +22,7 @@
 }
 .link-box{
   background:#1e1e1e;
-  padding:28px;
+  padding:20px;
   border-radius:12px;
   border:1px solid #333;
   transition:0.3s;
@@ -46,9 +46,7 @@
 
 .link-box li{
   margin-bottom:6px;
-      list-style: auto !important;
-          color: white;
-    font-size: 13px;
+   
 
 }
 
